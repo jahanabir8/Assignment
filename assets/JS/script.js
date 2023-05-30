@@ -24,7 +24,7 @@ const admine = document.querySelector(".admine");
 const admin__logs = document.querySelector(".admin__logs");
 
 adminImg.addEventListener("click", function() {
-    admine.classList.toggle("admineOff")
+    admin__logs.classList.toggle("transform")
 })
 
 const mikeElements = document.querySelectorAll(".mike");
@@ -79,7 +79,7 @@ window.addEventListener("click", function(event) {
     // }
 
     if ((!admine.contains(event.target))  ) {
-        admine.classList.remove("admineOff")
+        admin__logs.classList.remove("transform")
       }
 
     

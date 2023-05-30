@@ -46,8 +46,8 @@ input, button{outline: none;}
 /* === */
 .admine{
     right: 0;
-    transform: translateX(330px);
-    transition: 0.3s ease-in-out;
+    /* transform: translateX(330px);
+    transition: 0.3s ease-in-out; */
 }
 
 .admineOff{
@@ -55,12 +55,12 @@ input, button{outline: none;}
 }
 
 .transform{
-    /* display: block !important; */
-    transform: translateX(0);
+    display: block !important;
+    /* transform: translateX(0); */
 }
 
 .admin__logs{
-    /* display: none ; */
+    display: none ;
 }
 
 .admin__logs ul li img{
