@@ -15,6 +15,7 @@
             <div class="adminImg w-[49px] h-[57px] flex justify-center items-center bg-[#000c] cursor-pointer">
                 <img class="" src="assets/image/icon/admin.svg" alt="icon">
             </div>
+            
             <div class="admin__logs bg-[#000c] w-[330px]">
                 <ul class="ps-[24px] pb-[24px] pt-[10px] pe-[10px]">
                     <li class="flex items-center justify-between h-[60px] border-b-[1px] border-[#ccc]">
@@ -100,18 +101,21 @@
                 </ul>
             </div>
         </div>
-        <div class="float__set flex gap-[26px] p-[14px] bg-[#000c] w-[192px] absolute right-[0px] bottom-[30px]">
-            <img class="capture" src="assets/image/icon/camera.svg" alt="icon">
-            <img class="square" src="assets/image/icon/fullscreen.svg" alt="icon">
-            
-            <span>
-                <img class="setSound" src="assets/image/icon/soundOn.png" alt="">
-                <img class="setSound hidden" src="assets/image/icon/soundOff.png" alt="">
-            </span>
-            
-            <!-- <img src="assets/image/icon/sound.svg" alt="icon"> -->
 
-            <img class="sidebarBtn" src="assets/image/icon/settings.svg" alt="icon">
+
+        <div class="float__set absolute right-[0px] bottom-[30px]">
+            <div class="sound_range h-[48px] bg-[#000c] rounded-[5px] flex justify-center hidden">
+                <input type="range" min="1" max="100" value="50">
+            </div>
+            <div class=" flex gap-[26px] p-[14px] bg-[#000c] w-[192px] ">
+                <img class="capture" src="assets/image/icon/camera.svg" alt="icon">
+                <img class="square" src="assets/image/icon/fullscreen.svg" alt="icon">
+                <span>
+                    <img class="setSound" src="assets/image/icon/soundOn.png" alt="icon">
+                    <img class="setSound hidden" src="assets/image/icon/audio.png" alt="icon">
+                </span>
+                    <img class="sidebarBtn" src="assets/image/icon/settings.svg" alt="icon">
+            </div>
         </div>
         <div class="float__com bg-[#000c] max-w-[423px] h-[76px] overflow-hidden absolute right-[16px] top-[20px] p-[12px] text-[#ccc] leading-[28px] grid gap-[] justify-between">
             <span>Lorem ipsum dolor sit amet. Et recusandae neque eum voluptate delectus 

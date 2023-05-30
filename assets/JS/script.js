@@ -11,13 +11,34 @@ comment.addEventListener("click", function() {
 
 // setting sound
 const setSounds = document.querySelectorAll(".setSound");
+const sound_range = document.querySelector(".sound_range")
 setSounds.forEach(element => {
   element.addEventListener("click", function() {
     setSounds.forEach(setSound => {
         setSound.classList.toggle("hidden");
+        if(setSound.classList.contains("hidden")){
+          sound_range.classList.add("hidden")
+        }
+
+        if(!setSound.classList.contains("hidden")){
+          sound_range.classList.remove("hidden")
+        }
+      
+        
     });
   });
 });
+
+// const setSound = document.querySelector(".setSound")
+// const sound_range = document.querySelector(".sound_range")
+// setSound.addEventListener('click', function(){
+//   if(sound_range.classList.contains("hidden")){
+//     sound_range.classList.remove("hidden")
+//   }
+//   else{
+//     sound_range.classList.add("hidden")
+//   }
+// })
 
 const adminImg = document.querySelector(".adminImg");
 const admine = document.querySelector(".admine");
@@ -71,7 +92,12 @@ sidebarBtn.addEventListener("click", function() {
 
 // window click js
 window.addEventListener("click", function(event) {
-    if (!sidebarBtn.contains(event.target) && !sidebar.contains(event.target)) {
+  if(!cross.contains(event.target) && !comment.contains(event.target)){
+    comment.classList.add("cmtNone")  
+  }
+
+  // && !sidebar.contains(event.target)
+    if (!sidebarBtn.contains(event.target) ) {
         sidebar.classList.remove("sideOpen");
       }
     // if((!sidebar.contains(event.target)) ) {
@@ -82,7 +108,11 @@ window.addEventListener("click", function(event) {
         admin__logs.classList.remove("transform")
       }
 
-    
+    // if (!sound_range.contains(event.target)  && !setSounds.contains(event.target)) {
+    //     sound_range.classList.add("hidden")
+    //     // console.log("hide")
+    //   }
+      
 });  
 
 

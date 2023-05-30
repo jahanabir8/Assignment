@@ -24,6 +24,8 @@ input, button{outline: none;}
 .main__body{
     background-image: url(../image/BG/Neon_Car.jpg);
     height: 100vh;
+    background-position: center;
+    background-size: cover;
     /* overflow: hidden; */
 }
 .float__set img{
@@ -88,6 +90,12 @@ input, button{outline: none;}
     padding: 18px 30px;
     width: 100%;
     text-align: start;
+}
+
+@media screen and (max-width: 424px) {
+    .sidebar{
+        width: 100% !important;
+    }
 }
 /* === */
 /* =====customization css end here===== */
